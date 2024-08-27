@@ -1,4 +1,4 @@
-name: SE HW1 Python application
+name: Python tests
 
 on:
   push:
