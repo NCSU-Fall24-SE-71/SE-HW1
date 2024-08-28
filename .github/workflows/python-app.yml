@@ -41,3 +41,9 @@ jobs:
     - name: Run two tests on myfile
       run: |
         python test_myfile.py
+
+    - name: Update Coverage Badge
+      if: 
+        github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+      uses: 
+        we-cli/coverage-badge-action@main
